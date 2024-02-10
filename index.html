@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloby site</title>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <link rel="stylesheet" href="style.css:>
+  </head>
+
+  <body>
+    <section>
+      <div class="blob-content">
+        <h1>Nice curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam maiores odio soluta corrupti enim libero
+        animi, eaque sit incidunt similique vitae ipsum non, temporibus labore modi quis ut perspiciatis sed.
+        </p>
+      </div>
+
+      <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g transform="translate(459.9470886470737 271.7581240122415)">
+        <path id="blob1"
+        d="M101.4 -113.4C132 -70.7 158 -35.4 175.2 17.2C192.4 69.8 200.9 139.5 170.2 189.5C139.5 239.5 69.8 269.8 0.7 269.1C-68.4 268.4 -136.7 236.7 -173.7 186.7C-210.7 136.7 -216.4 68.4 -205.9 10.5C-195.4 -47.4 -168.8 -94.8 -131.8 -137.4C-94.8 -180.1 -47.4 -218 -6 -212C35.4 -206 70.7 -156 101.4 -113.4"
+        fill="#ffd700"></path>
+        <g transform="translate(431.53993917766854 288.95143278642587)" style="visibility: hidden;">
+        <path id="blob2"
+        d="M120.7 -103C170.7 -70.7 235.4 -35.4 241.1 5.8C246.9 46.9 193.8 93.8 143.8 137.5C93.8 181.1 46.9 221.6 3.2 218.4C-40.5 215.2 -81.1 168.4 -115.9 124.7C-150.7 81.1 -179.9 40.5 -194.8 -15C-209.8 -70.5 -210.6 -140.9 -175.8 -173.3C-140.9 -205.6 -70.5 -199.8 -17.6 -182.2C35.4 -164.7 70.7 -135.4 120.7 -103"
+        fill="#ffd700"></path>
+        </g>
+        </g>
+        <script>
+          const tween = KUTE.fromTo(
+            '#blob1',
+            { path: '#blob1'},
+            { path: '#blob2'},
+            { repeat: 999, duration: 3000, yoyo: true}
+          ).start();
+        </script>
+      </svg>
+    </section>
+  </body>
+
+</html>
