@@ -1,5 +1,3 @@
-import './style.css'
-
 const trailer = document.getElementById("trailer");
 
 window.onmousemove = e => {
